@@ -1,0 +1,97 @@
+
+.overlay-text {
+    background-image:  url("gryy.jpg");
+    height: 100vh;
+    background-size: cover;
+    
+    
+        background-blend-mode: darken;
+        
+    }
+    
+     .overlay-text h1{
+        color: red;
+        text-align: left;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+     .overlay-text h1{
+        text-align: center;
+        color:wheat;
+
+    }
+     .overlay-text h1{
+        color: wheat;
+
+    }
+    .bgg
+    {
+        background-color: black;
+        color:bisque;
+    }
+    .bggg
+    {
+        background-image: url("blk.jpg");
+    }
+    .h1
+    {
+        color: beige;
+    }
+    .content
+    {
+       background-color: black;
+        text-align: left;
+    }
+    .h1{
+        color: aqua;
+    }
+    .phone
+    {
+        background-color: black;
+    }
+    .netflix
+    {
+        background-color: black;
+    }
+    .animation
+    {
+        background-color: black;
+    }
+    .question
+    {
+        background-color: black;
+    padding: 10px 12%; 
+    }
+    h1{
+        color: aliceblue;
+        text-align: center;
+    }
+    h2{
+        margin-left: 100px;
+        background-color: gray;
+        margin-right: 200px;
+        color: whitesmoke;
+    }
+    .accordian{
+         margin: ; 
+        width: 100%;
+    }
+    .accordian li{
+        width: 100%;
+        padding: 5px;
+    }
+    .accordian li label{
+        background-color: grey;
+        padding: 10px;
+        font-size: 25px;
+        display: flex;
+        position: relative;
+    }
+    label::after{
+       
+        position:absolute;
+    }
+    .question{
+        background-color: black;
+    }
+    

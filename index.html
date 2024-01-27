@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="smple.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<body>
+
+  <div class="overlay-text">
+    
+    <h1 style="color: red; padding-left: 0px; padding-top: 0px; text-align: left;">NETFLIX</h1>
+   
+    <h1 style="display: flex; justify-content: center; text-decoration: underline; color: white;"> Unlimited movies, TV
+      shows and more
+    </h1>
+    <h1 style="display: flex; justify-content: center;">Watch anywhere. Cancel anytime.</h1>
+
+    <h1 style="display: flex; justify-content: center;">Ready to watch? Enter your email to create or restart your
+      membership.</h1>
+    <div class="mail" style="margin-left: 450px;">
+      <form class="email-signup">
+        <input type="email" placeholder="Email address">
+        <button type="submit" style="color: red;"> Get Started</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="content" style="display: flex;height: 80vh;">
+    <div>
+      <h1 style="color: aliceblue; margin-left: 50px; margin-top: 190px;">Enjoy on your TV</h1>
+      <h3 style="color: aliceblue; margin-left: 50px; margin-top: 0px;">Watch on smart TVs, PlayStation, Xbox,
+        Chromecast, Apple TV, Blu-ray players and more.</h3>
+    </div>
+    <img src="televisn.jpg"
+      style="width: 70vh; height: 300px; margin-top: 150px; margin-left: 100px; margin-right: 20px;">
+  </div>
+
+
+
+  <div class="phone" style="display: flex;height: 70vh;">
+    <div>
+      <img src="mobile.jpg" style="width: 70vh; height: 60vh; margin-top: 50px; margin-left: 150px;">
+    </div>
+    <div>
+      <h1 style="color:azure; margin-left: 100px; margin-top: 50px;">Download your shows to watch offline</h1>
+      <h3 style="color: beige; margin-left: 100px; margin-top: 50px;">Save your favourites easily and always have
+        something to watch.</h3>
+    </div>
+  </div>
+
+
+
+  <div class="netflix" style="display: flex;height: 70vh;">
+    <div>
+      <h1 style="color:azure; margin-left: 100px; margin-top: 60px;">Watch everywhere</h1>
+      <h3 style="color: beige; margin-left: 100px; margin-top: 60px;">Stream unlimited movies and TV shows on your
+        phone, tablet, laptop, and TV.</h3>
+    </div>
+
+    <img src="mbl2.jpg" style="width: 70vw; height: 300px; margin-top: 50px; margin-left: 150px; margin-right: 20px;">
+
+  </div>
+
+
+
+  <div class="animation" style="display: flex; height:80vh;">
+    <img src="micky.jpg" style="width: 70vh; height: 300px; margin-top: 50px; margin-left: 150px;">
+    <div>
+      <h1 style="color: beige; margin-left: 100px; margin-top: 50px;">Create profiles for kids</h1>
+      <h3 style="color: beige; margin-left: 100px; margin-top: 50px;">Send children on adventures with their favourite
+        characters in a space made just for them—free with your membership.</h3>
+    </div>
+  </div>
+
+
+  <div class="question" style="height: 180vh; color: white;">
+    <h1> <strong> Frequently Asked Questions</strong></h1>
+    <ul class="accordian" style="list-style-type: none;">
+      <li>
+        <div style="display: flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="first" id="first"> what is netflix?</label>
+          <label for="ansr" id="firstplus" style="display: ''" onClick={showanswer1()}> + </label>
+          <label for="ansr" id="firstminus" style="display:none;" onClick={hideanswer1()}> - </label>
+        </div>
+        <div class="ansr" id="firstanswer" style="display:none; color: white; width: 70vw;">
+          <p> Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries and more – on thousands of internet-connected devices.
+
+            You can watch as much as you want, whenever you want, without a single ad all for one low monthly price.
+            There's always something new to discover, and new TV shows and movies are added every week! Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Dolor minus necessitatibus non quisquam facere. Placeat quas
+            excepturi corrupti debitis quo magni eaque tenetur quod delectus dicta non, nisi provident perferendis!</p>
+        </div>
+      </li>
+
+      <li>
+        <div style="display: flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="second" id="second"> How much does netflix cost?</label>
+          <label for="answ" id="secondplus" style="display: ''" onClick={showanswer2()}> + </label>
+          <label for="answ" id="secondminus" style="display: none;" onClick={hideanswer2()}> - </label>
+        </div>
+        <div class="answ" id="secondanswer" style="display: none; color: white; width: 70vw;">
+          <p> Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+            fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+        </div>
+      </li>
+
+      <li>
+        <div style="display: flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="third" id="third">Where can I watch? </label>
+          <label for="ans" id="thirdplus" style="display: '' " onClick={showanswer3()}>+</label>
+          <label for="ans" id="thirdminus" style="display:none;" onClick={hideanswer3()}> - </label>
+        </div>
+        <div class="ans" style="display: none; color: white; width: 70vw;" id="thirdanswer">
+          <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com
+            from your personal computer or on any internet-connected device that offers the Netflix app, including smart
+            TVs, smartphones, tablets, streaming media players and game consoles.
+
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch
+            while you're on the go and without an internet connection. Take Netflix with you anywhere</p>
+      </li>
+
+
+      <li>
+        <div style="display:flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="forth" id="forth">How do I cancel? </label>
+          <label for="answer" id="fourthplus" style="display: '' " onClick={showanswer()}>+</label>
+          <label for="answer" id="fourthminus" style="display: none;" onClick={hideanswer()}> - </label>
+        </div>
+        <div class="answer" style="display: none; width: 70vw;" id="fourthanswer">
+          <p style="color: white;">Netflix is flexible. There are no annoying contracts and no commitments. You can
+            easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account
+            anytime.</p>
+      </li>
+
+      <li>
+        <div style="display:flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="fifth" id="fifth">What can I watch on netflix?</label>
+          <label for="answ" id="fifthplus" style="display: ''" onClick={showanswer5()}> + </label>
+          <label for="answ" id="fifthminus" style="display: none;" onClick={hideanswer5()}> - </label>
+        </div>
+        <div class="answ" id="fifthanswer" style="display: none; color: white; width: 70vw;">
+          <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+            originals, and more. Watch as much as you want, anytime you want.</p>
+      </li>
+
+      <li>
+        <div style="display:flex; width: 70vw; background-color: gray;justify-content: space-between;">
+          <label for="sixth" id="sixth">Is netflix good for kids? </label>
+          <label for="answw" id="sixplus" style="display: ''" onClick={showanswer6()}> + </label>
+          <label for="answw" id="sixminus" style="display: none;" onClick={hideanswer6()}> - </label>
+        </div>
+        <div class="answw" id="sixanswer" style="display: none; color: white; width: 70vw;">
+          <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+            family-friendly TV shows and films in their own space.
+
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+            kids can watch and block specific titles you don’t want kids to see.</p>
+        </div>
+      </li>
+
+
+
+
+      <script>
+        function showanswer1() {
+          document.getElementById("firstplus").style.display = "none"
+          document.getElementById("firstminus").style.display = ""
+          document.getElementById("firstanswer").style.display = ""
+        }
+        function hideanswer1() {
+          document.getElementById("firstplus").style.display = ""
+          document.getElementById("firstminus").style.display = "none"
+          document.getElementById("firstanswer").style.display = "none"
+        }
+      </script>
+
+
+      <script>
+        function showanswer2() {
+          document.getElementById("secondplus").style.display = "none"
+          document.getElementById("secondminus").style.display = ""
+          document.getElementById("secondanswer").style.display = ""
+        }
+        function hideanswer2() {
+          document.getElementById("secondplus").style.display = ""
+          document.getElementById("secondminus").style.display = "none"
+          document.getElementById("secondanswer").style.display = "none"
+        }
+      </script>
+
+
+
+      <script>
+        function showanswer3() {
+          document.getElementById("thirdplus").style.display = "none"
+          document.getElementById("thirdminus").style.display = ""
+          document.getElementById("thirdanswer").style.display = ""
+        }
+        function hideanswer3() {
+          document.getElementById("thirdplus").style.display = ""
+          document.getElementById("thirdminus").style.display = "none"
+          document.getElementById("thirdanswer").style.display = "none"
+        }
+      </script>
+
+
+      <script>
+        function showanswer() {
+          document.getElementById("fourthanswer").style.display = ""
+          document.getElementById("fourthplus").style.display = "none"
+          document.getElementById("fourthminus").style.display = ""
+        }
+        function hideanswer() {
+          document.getElementById("fourthanswer").style.display = "none"
+          document.getElementById("fourthplus").style.display = ""
+          document.getElementById("fourthminus").style.display = "none"
+        }
+      </script>
+
+
+      <script>
+        function showanswer5() {
+          document.getElementById("fifthanswer").style.display = ""
+          document.getElementById("fifthplus").style.display = "none"
+          document.getElementById("fifthminus").style.display = ""
+        }
+        function hideanswer5() {
+          document.getElementById("fifthanswer").style.display = "none"
+          document.getElementById("fifthplus").style.display = ""
+          document.getElementById("fifthminus").style.display = "none"
+        }
+
+      </script>
+
+      <script>
+        function showanswer6() {
+          document.getElementById("sixanswer").style.display = ""
+          document.getElementById("sixplus").style.display = "none"
+          document.getElementById("sixminus").style.display = ""
+        }
+        function hideanswer6() {
+          document.getElementById("sixanswer").style.display = "none"
+          document.getElementById("sixplus").style.display = ""
+          document.getElementById("sixminus").style.display = "none"
+        }
+
+      </script>
+    </ul>
+    <div class="last">
+      <p style="color: white; text-align: center; padding: 40px;">Ready to watch? Enter your email to creat or restart
+        your membership</p>
+      <div class="mmm" style="margin-left: 300px; padding: 10px;">
+        <form class="email-signup">
+          <input type="email" placeholder="Email address">
+          <button type="submit" style="color: red;"> Get Started</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="container text-center">
+      <div class="row" style="color: grey;">
+        
+        <div class="col" style="text-decoration: underline; margin-top: 40px;">
+          <ul class="pg" style="list-style-type: none;">
+            <li>FAQ</li>
+            <li>Investor Relations</li>
+            <li>Privacy</li>
+            <li>Speed Test</li>
+            <li>Netflix India</li>
+          </ul>
+          </div>
+          <div class="col" style="text-decoration: underline;  margin-top: 40px;">
+            <ul class="pg" style="list-style-type: none;">
+          <li>Help Centre</li>
+          <li>jobs</li>
+          <li>Cookie Preferences</li>
+          <li>Legal Notices</li>
+        </ul>
+        </div>
+        <div class="col" style="text-decoration: underline;  margin-top: 40px;">
+          <ul class="pg" style="list-style-type: none;">
+            <li>Account</li>
+            <li>Ways to watch</li>
+            <li>Corporate information</li>
+            <li>only on netflix</li>
+          </ul>
+          </div>
+          <div class="col" style="text-decoration: underline;  margin-top: 40px;">
+            <ul class="pg" style="list-style-type: none;">
+            <li>Media Centre</li>
+            <li>Terms to use</li>
+            <li>Contact us</li>
+          </ul>
+          </div>
+
+      </div>
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+
+</html>
